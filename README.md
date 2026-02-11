@@ -36,3 +36,6 @@ O fluxo inclui geração de acumulados, cálculo de métricas contínuas e categ
 	Mean_Bias_MONAN_BAM_GFS.py 
 	Mean_MAE_MONAN_BAM_GFS.py
 	Mean_RMSE_MONAN_BAM_GFS.py
+    Mean_Skill_score_MONAN_BAM_GFS.py
+
+
