@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Based on original script by Andre Lyra (andre.lyra@inpe.br)
+Based on a script by Andre Lyra (andre.lyra@inpe.br)
 Last update: Feb 2026 by Guilherme Torres Mendonça (guilherme.mendonca@inpe.br)
 
 Description
@@ -20,11 +20,12 @@ Input
 
 Output
 ------
-- 
+- RMSE values
+- Analysis maps
 
 Main variables
 --------------
-- RMSE (float64): root mean square error ()
+- RMSE (float64): root mean square error
 """
 
 import argparse
