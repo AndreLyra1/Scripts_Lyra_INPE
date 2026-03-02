@@ -1,4 +1,8 @@
-# Project structure
+# MONAN Analysis
+
+Project to centralize code for analyses of simulations with the MONAN model.
+
+## Structure
 ```
 monan_analysis/
 ├── README.md             
@@ -21,3 +25,24 @@ monan_analysis/
 │       └── run.sh        # exemplary helper shell script for analysis2
 └── exploratory/          # exploratory (preliminary) scripts
 ```
+____________
+
+## Installation
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/GAMA-INPE/monan_analysis.git
+cd monan_analysis
+```
+
+### 2. Set up conda environment
+
+# If necessary, load Anaconda module
+```
+module load anaconda
+```
+
+ 
+
+
