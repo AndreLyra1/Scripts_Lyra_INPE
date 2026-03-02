@@ -1,2 +1,2 @@
-def test():
-    print ("importing installable package working.")
+def example_function_utils():
+    print ("this is a function imported from the utils.py module.")
