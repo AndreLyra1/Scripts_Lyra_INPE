@@ -1,4 +1,4 @@
-# MONAN Analysis
+# MONAN analysis
 
 Project to centralize code for analyses of simulations with the MONAN model.
 
@@ -27,7 +27,7 @@ monan_analysis/
 ```
 ____________
 
-## Installation
+## Installation guide
 
 ### 1. Clone the repository
 
@@ -38,11 +38,36 @@ cd monan_analysis
 
 ### 2. Set up conda environment
 
-# If necessary, load Anaconda module
+2.1) If using an HPC system, load Anaconda (or other conda)  module
 ```
 module load anaconda
 ```
+2.2) If not yet available, create conda environment to install project packages
+```
+conda create -n gama
+```
+2.3) Activate conda environment
+```
+conda activate gama
+```
+2.4) Install python inside that conda environment:
+```
+conda install python=3.12
+```
+2.5) Make sure python is installed in the conda env:
+```
+which python
+```
+If the above points to your recently created conda env, proceed to step 3.
 
- 
+### 3. Install project-specific dependencies
+All project-specific dependencies, including own project packages under src/, are listed in requirements.txt. Thus, to install these dependencies, make sure you are in your conda environment, and run
+```
+python -m pip install -r requirements.txt
+```
 
-
+If you already have the needed external dependencies but want to install only the project packages under src/, you can do this by running
+```
+python -m pip install -e .
+```
+inside your conda environment.
