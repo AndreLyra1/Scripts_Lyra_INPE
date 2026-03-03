@@ -102,7 +102,7 @@ In both steps 1) and 2) the user can take advantage of the already defined funct
 from monan_analysis.plots import example_function_plots
 ```
 
-For developing the project and modifying or adding code to either `exploratory/`, `analyses/` or `src/`, please follow the workflow
+For developing the project please follow the workflow
 
 new branch (name abbreviation/feature, e.g. gtm/repo-organization) --> code modifications -->  open pull request and assign reviewers --> after reviewers' approval, merge into `main` branch.
 
