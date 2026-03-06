@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Description
+-----------
+This module contains functions to be used for input and output operations.
+"""
+
 import monan_analysis.config as config
 
 def example_function_io():

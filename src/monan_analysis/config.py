@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Description
+-----------
+This module contains global variables generally used in the analysis.
+"""
 # Standard strings for filenames
 PREFIX_STRING = "MONAN_DIAG_G_POS_GFS_"
 GRID_STRING = "x5898242"

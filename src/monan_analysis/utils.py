@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Description
+-----------
+This module contains generally useful auxiliary functions.
+"""
+
 import datetime
 
 def example_function_utils():
