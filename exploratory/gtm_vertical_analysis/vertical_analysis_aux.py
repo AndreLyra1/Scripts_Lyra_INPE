@@ -13,7 +13,7 @@ import datetime
 import os
 import sys
 from pathlib import Path
-import config
+import monan_analysis.config as config
 
 def setup_parser():
     """Set up the argument parser with common arguments."""
@@ -29,28 +29,6 @@ def setup_parser():
     
     args = parser.parse_args()
     return args
-
-def date_as_datetime(year,month,day,hour):
-    date_in_datetime = datetime.datetime(
-            int(year), 
-            int(month), 
-            int(day), 
-            int(hour)
-        )
-    return date_in_datetime
-
-def date_as_YYYYMMDDHH_str(year,month,day,hour):
-    date_in_string = f"{year}{month}{day}{hour}" 
-    return date_in_string
-
-def get_MONAN_DIAG_filename(date_in_string_init, date_in_string_final):
-    filename = (f"{config.PREFIX_STRING}_{date_in_string_init}_{date_in_string_final}.00.00."
-                f"{config.GRID_STRING}{config.VERTICAL_LEVELS_STRING}.nc")
-    return filename
-
-def get_final_date_from_initial_date(date_in_datetime, time_window):
-    date_final_in_datetime = date_in_datetime + datetime.timedelta(hours=time_window)
-    return date_final_in_datetime
 
 # delta_hora = datetime.timedelta(hours=0)
 # delta_dia = datetime.timedelta(hours=24)

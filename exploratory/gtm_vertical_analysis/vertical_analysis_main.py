@@ -30,15 +30,17 @@ Main variables
 """
 
 import vertical_analysis_aux as va_aux
-import config
+import monan_analysis.config as config
+import monan_analysis.io as io
+import monan_analysis.utils as utils
 import datetime
 
 if __name__ == "__main__":
     args = va_aux.setup_parser()
 
-    date_in_datetime = va_aux.date_as_datetime(args.year, args.month, args.day, args.hour)
-    date_in_string = va_aux.date_as_YYYYMMDDHH_str(args.year, args.month, args.day, args.hour)
-    date_final_in_datetime = va_aux.get_final_date_from_initial_date(date_in_datetime, args.time_window)
+    date_in_datetime = utils.date_as_datetime(args.year, args.month, args.day, args.hour)
+    date_in_string = utils.date_as_YYYYMMDDHH_str(args.year, args.month, args.day, args.hour)
+    date_final_in_datetime = utils.get_final_date_from_initial_date(date_in_datetime, args.time_window)
     date_final_in_string = date_final_in_datetime.strftime(config.DATE_FORMAT)
-    filename = va_aux.get_MONAN_DIAG_filename(date_in_string,date_final_in_string)
+    filename = io.get_MONAN_DIAG_filename(date_in_string,date_final_in_string)
     print (filename)
