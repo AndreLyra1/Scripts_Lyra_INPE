@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """
+vertical_analysis.main.py
+
 Based on a script by Andre Lyra (andre.lyra@inpe.br)
 Last update: Feb 2026 by Guilherme Torres Mendonça (guilherme.mendonca@inpe.br)
 Last update: Mar 2026 by Guilherme Torres Mendonça (guilherme.mendonca@inpe.br)

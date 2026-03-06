@@ -2,19 +2,23 @@
 """
 vertical_analysis_config.py
 
+Description
+-----------
 This configuration file contains settings and variables specific to the current analysis.
 It includes paths to data files, analysis-specific parameters, and other settings that
 are unique to this particular analysis.
 
-Usage:
+Usage
+-----
 - Import this file in scripts that are part of this specific analysis.
 - Do not use this file for general-purpose configurations.
 
 Example:
     from analysis_folder.config import DATA_PATH, ANALYSIS_PARAM
 
-Acknowledgment:
-    This file was created with the assistance of GitHub Copilot.    
+Acknowledgments
+---------------
+This file was created with the assistance of GitHub Copilot.    
 """
 
 # Paths to data files

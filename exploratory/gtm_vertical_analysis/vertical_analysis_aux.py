@@ -1,11 +1,28 @@
 # -*- coding: utf-8 -*-
 """
+vertical_analysis_aux.py
+
 Based on a script by Andre Lyra (andre.lyra@inpe.br)
 Last update: Feb 2026 by Guilherme Torres Mendonça (guilherme.mendonca@inpe.br)
 
 Description
 -----------
-Module containing auxiliary functions to be used in the main analysis script vertical_analysis.py.
+This module contains auxiliary functions to be used specifically in this analysis.
+
+Usage
+-----
+- Import this module in scripts that are part of this specific analysis.
+- Do not use this module for defining general-purpose functions.
+
+Examples:
+- from vertical_analysis_aux import setup_parser
+or
+- import vertical_analysis_aux as va_aux
+  args = va_aux.setup_parser()
+
+Acknowledgments
+---------------
+This file was created with the assistance of GitHub Copilot.    
 """
 
 import argparse
@@ -88,11 +105,3 @@ def setup_parser():
 
 #     fi = xr.open_dataset(arquivoi, engine="netcdf4")
 #     fe = xr.open_dataset(arquivoe, engine="netcdf4")
-
-if __name__ == "__main__":
-    args = setup_parser()
-    print (args.year)
-    date_in_datetime = date_in_datetime_format(args)
-    date_in_string = date_in_string_format(args)
-    print (f"Date in datetime format: {date_in_datetime}")
-    print (f"Date in string format: {date_in_string}")

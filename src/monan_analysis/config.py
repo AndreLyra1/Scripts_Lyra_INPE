@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-config2.py
+config.py
 
 Description
 -----------
