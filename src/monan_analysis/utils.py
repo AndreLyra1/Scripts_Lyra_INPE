@@ -3,6 +3,21 @@
 Description
 -----------
 This module contains generally useful auxiliary functions.
+
+Usage
+-----
+- Import this module in scripts that require auxiliary functions.
+- Functions in this module should be general-purpose and reusable across different analyses.
+
+Examples:
+- from monan_analysis.utils import date_as_datetime
+or 
+- import monan_analysis.utils as utils
+  date_as_datetime = utils.date_as_datetime(year,month,day,hour)
+
+Acknowledgments
+---------------
+This file was created with the assistance of GitHub Copilot. 
 """
 
 import datetime
