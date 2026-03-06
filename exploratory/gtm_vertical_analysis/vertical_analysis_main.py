@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-vertical_analysis.main.py
+vertical_analysis_main.py
 
 Based on a script by Andre Lyra (andre.lyra@inpe.br)
 Last update: Feb 2026 by Guilherme Torres Mendonça (guilherme.mendonca@inpe.br)
@@ -29,6 +29,10 @@ Output
 Main variables
 --------------
 - RMSE (float64): root mean square error
+
+Acknowledgments
+---------------
+This file was created with the assistance of GitHub Copilot. 
 """
 
 import vertical_analysis_aux as va_aux
