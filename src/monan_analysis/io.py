@@ -29,5 +29,5 @@ def example_function_io():
 
 def get_MONAN_DIAG_filename(date_in_string_init, date_in_string_final):
     filename = (f"{config.PREFIX_STRING}_{date_in_string_init}_{date_in_string_final}.00.00."
-                f"{config.GRID_STRING}{config.VERTICAL_LEVELS_STRING}.nc")
+                f"{config.GRID_10KM_UNIFORM_STRING}{config.VERTICAL_LEVELS_STRING}.nc")
     return filename

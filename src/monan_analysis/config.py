@@ -25,7 +25,7 @@ This file was created with the assistance of GitHub Copilot.
 """
 # Standard strings for filenames
 PREFIX_STRING = "MONAN_DIAG_G_POS_GFS"
-GRID_STRING = "x5898242"
+GRID_10KM_UNIFORM_STRING = "x5898242"
 VERTICAL_LEVELS_STRING = "L55"
 
 # Standard date configuration
