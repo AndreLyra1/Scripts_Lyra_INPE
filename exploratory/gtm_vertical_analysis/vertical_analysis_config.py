@@ -21,9 +21,16 @@ Acknowledgments
 This file was created with the assistance of GitHub Copilot.    
 """
 
+# Date for analysis
+YEAR = "2025"
+MONTH = "12"
+DAY = "01"
+HOUR = "00"
+TIME_WINDOW = "24"
+# Grid configuration
+GRID_SPEC = "10km_uniform"
+# Vertical level configuration
+VERTICAL_LEVEL_SPEC = "55"
 # Paths to data files
 MONAN_PREOP = "/lustre/projetos/monan_adm/monan/ecf_PREOPER/MONAN-WorkFlow-OPER/MONAN_PRE_OPER/MONAN/scripts_CD-CT/dataout/flushout"
 CARTOPY_DATA_DIR = "/lustre/projetos/monan_gam/andre.lyra/cartopy"
-
-# Grid type
-GRID_SPEC = '10km_uniform'

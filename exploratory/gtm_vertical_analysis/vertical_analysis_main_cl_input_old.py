@@ -45,34 +45,28 @@ import matplotlib.pyplot as plt
 import os
 
 if __name__ == "__main__":
-    # Read data from MONAN
-    ## Get file path for reading MONAN data
-    ### Compute date for initial conditions in datetime and string formats
-    date_init_in_datetime = utils.date_as_datetime(
-        va_config.YEAR, va_config.MONTH, va_config.DAY, va_config.HOUR
-        )
-    date_init_in_string = utils.date_as_YYYYMMDDHH_str(
-        va_config.YEAR, va_config.MONTH, va_config.DAY, va_config.HOUR
-        )
-    ### Compute date for end of time window
-    date_final_in_datetime = utils.get_final_date_from_initial_date(
-        date_init_in_datetime, va_config.TIME_WINDOW
-        )
+    # Get input arguments
+    args = va_aux.setup_parser()
+
+    # Get filename for reading MONAN data
+    ## Date for initial conditions
+    date_init_in_datetime = utils.date_as_datetime(args.year, args.month, args.day, args.hour)
+    date_init_in_string = utils.date_as_YYYYMMDDHH_str(args.year, args.month, args.day, args.hour)
+    ## Date for end of time window
+    date_final_in_datetime = utils.get_final_date_from_initial_date(date_init_in_datetime, args.time_window)
     date_final_in_string = date_final_in_datetime.strftime(config.DATE_FORMAT)
-    ### Get MONAN output filename
-    filename = io.get_MONAN_DIAG_filename(
-        date_init_in_string,date_final_in_string,grid_spec=va_config.GRID_SPEC,
-        vertical_level_spec=va_config.VERTICAL_LEVEL_SPEC
-        )
+    ## MONAN output filename
+    filename = io.get_MONAN_DIAG_filename(date_init_in_string,date_final_in_string,grid_spec=va_config.GRID_SPEC)
     print (filename)
-    ### Get complete path
+
+    # Read data from MONAN
+    ## Get complete path
     filepath = f"{va_config.MONAN_PREOP}/{date_init_in_string}/{filename}"
     print (filepath)
-    ## Read dataset
     ds_monan = xr.open_dataset(filepath, engine="netcdf4")
     print (ds_monan)
 
-   # 
+    va_aux.plot_zonal_mean(ds_monan)
 
     # Preprocess MONAN data
     #var='temperature'

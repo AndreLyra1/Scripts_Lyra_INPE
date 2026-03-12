@@ -23,11 +23,15 @@ Acknowledgments
 ---------------
 This file was created with the assistance of GitHub Copilot. 
 """
-# Standard strings for filenames
+# Standard strings for MONAN output filenames
+## Standard prefix in output filenames
 PREFIX_STRING = "MONAN_DIAG_G_POS_GFS"
+## Strings for each grid configuration
 GRID_10KM_UNIFORM_STRING = "x5898242"
 GRID_24KM_UNIFORM_STRING = "x1024002"
-VERTICAL_LEVELS_STRING = "L55"
+## Strings for each vertical level configuration
+VERTICAL_LEVEL_L30_STRING = "L30"
+VERTICAL_LEVEL_L55_STRING = "L55"
 
-# Standard date configuration
-DATE_FORMAT = '%Y%m%d%H'
+# Standard date format in MONAN output filenames
+DATE_FORMAT = "%Y%m%d%H"
