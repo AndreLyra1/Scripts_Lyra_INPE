@@ -34,21 +34,21 @@ VERTICAL_LEVEL_SPEC = "55"
 # Variables to analyze
 VARIABLES_TO_ANALYZE = [
     "temperature",
-    # "relhum",
-    # "spechum",
-    # "zgeo",
-    # "uzonal",
-    # "umeridional",
+    "relhum",
+    "spechum",
+    "zgeo",
+    "uzonal",
+    "umeridional",
     ]
 # Vertical levels to analyze
 VERTICAL_LEVELS_TO_ANALYZE = [
-    "92500", # "85000",  "70000",  "50000",  "40000",  "25000",  "10000"
+    "92500", "85000",  "70000",  "50000",  "40000",  "25000",  "10000"
     ]
 # Domains to analyze
 DOMAINS_TO_ANALYZE = [
     "global", 
-    #"south_america", 
-    #"central_america_and_caribbean"
+    "south_america", 
+    "central_america_and_caribbean"
     ]
 
 # Paths to data files
